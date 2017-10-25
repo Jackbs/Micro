@@ -1,0 +1,40 @@
+// Store initial values
+ldi 68
+sta 10
+ldi 69
+sta 11
+ldi 80
+sta 12
+ldi 48
+sta 13
+
+ldi 136
+sta 20
+ldi 1
+sta 21
+ldi 65
+sta 22
+ldi 138
+sta 23
+
+
+// begin program here
+ldr 10
+mul 11
+sub 12
+stc 3
+orr 13
+sta 2
+
+// SSDs should now show 0x1234
+	  	
+
+ldr 20
+shr 21
+add 22
+not
+xor 23
+and 1
+sta 0
+
+// LEDs should now show 0xF0 and SWITCHES
